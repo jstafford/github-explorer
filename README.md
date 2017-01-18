@@ -7,6 +7,14 @@ This project was bootstrapped with
 It is based on the "real world" example from Redux, found in the
 examples/real-world directory of [Redux](https://github.com/reactjs/redux)
 
+It is described as follows:
+
+This is the most advanced example. It is dense by design. It covers keeping
+fetched entities in a normalized cache, implementing a custom middleware for
+API calls, rendering partially loaded data, pagination, caching responses,
+displaying error messages, and routing. Additionally, it includes Redux
+DevTools.
+
 It is updated to the latest versions, slightly modified to keep a fixed header
 (rather than scroll the entire window), and extended with the
 [Redux infinite scroll](https://github.com/RealScout/redux-infinite-scroll)
