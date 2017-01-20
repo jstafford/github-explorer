@@ -1,22 +1,25 @@
-Real World React Redux With Infinite Scroll
-===========================================
+GitHub Explorer
+===============
+
+This is examples/real-world from [react-redux](https://github.com/reactjs/redux)
+combined with
+redux-infinite-scroll(https://github.com/RealScout/redux-infinite-scroll),
+deployed as a GitHub pages app. You can play with it
+[here](https://jstafford.github.io/github-explorer/).
 
 This project was bootstrapped with
 [Create React App](https://github.com/facebookincubator/create-react-app).
 
-It is based on the "real world" example from Redux, found in the
-examples/real-world directory of [Redux](https://github.com/reactjs/redux)
+The "real-world" example is described as follows in the React docs:
 
-It is described as follows:
+> This is the most advanced example. It is dense by design. It covers keeping
+> fetched entities in a normalized cache, implementing a custom middleware for
+> API calls, rendering partially loaded data, pagination, caching responses,
+> displaying error messages, and routing. Additionally, it includes Redux
+> DevTools.
 
-This is the most advanced example. It is dense by design. It covers keeping
-fetched entities in a normalized cache, implementing a custom middleware for
-API calls, rendering partially loaded data, pagination, caching responses,
-displaying error messages, and routing. Additionally, it includes Redux
-DevTools.
-
-It is updated to the latest versions, slightly modified to keep a fixed header
-(rather than scroll the entire window), and extended with the
+The example is updated to the latest versions, minimally modified to pass the desired
+api version, and extended with the
 [Redux infinite scroll](https://github.com/RealScout/redux-infinite-scroll)
 module by RealScout.
 

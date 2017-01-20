@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { loadUser, loadStarred } from '../actions'
 import User from '../components/User'
 import Repo from '../components/Repo'
-import List from '../components/List'
+import InfiniteList from '../components/InfiniteList'
 import zip from 'lodash/zip'
 
 const loadData = ({ login, loadUser, loadStarred }) => {
@@ -56,7 +56,7 @@ class UserPage extends Component {
       <div>
         <User user={user} />
         <hr />
-        <List renderItem={this.renderRepo}
+        <InfiniteList renderItem={this.renderRepo}
               items={zip(starredRepos, starredRepoOwners)}
               loadMoreCallback={this.handleLoadMore}
               loadingLabel={`Loading ${login}'s starred...`}

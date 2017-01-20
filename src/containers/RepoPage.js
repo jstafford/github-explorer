@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { loadRepo, loadStargazers } from '../actions'
 import Repo from '../components/Repo'
 import User from '../components/User'
-import List from '../components/List'
+import InfiniteList from '../components/InfiniteList'
 
 const loadData = props => {
   const { fullName } = props
@@ -53,7 +53,7 @@ class RepoPage extends Component {
         <Repo repo={repo}
               owner={owner} />
         <hr />
-        <List renderItem={this.renderUser}
+        <InfiniteList renderItem={this.renderUser}
               items={stargazers}
               loadMoreCallback={this.handleLoadMore}
               loadingLabel={`Loading stargazers of ${name}...`}

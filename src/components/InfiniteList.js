@@ -45,18 +45,14 @@ export default class InfiniteList extends Component {
     }
 
     return (
-      <div>
-        <span></span>
-          <ReduxInfiniteScroll
-            loadingMore={isFetching}
-            containerHeight="80px"
-            hasMore={!!nextPageUrl}
-            loadMore={loadMoreCallback}
-            style={{overflow: scroll}}
-          >
-            {items.map(renderItem)}
-          </ReduxInfiniteScroll>
-      </div>
+      <ReduxInfiniteScroll
+        loadingMore={isFetching}
+        hasMore={!!nextPageUrl}
+        loadMore={loadMoreCallback}
+        elementIsScrollable={false}
+      >
+        {items.map(renderItem)}
+      </ReduxInfiniteScroll>
     )
   }
 }
