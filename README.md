@@ -3,7 +3,7 @@ GitHub Explorer
 
 This is examples/real-world from [react-redux](https://github.com/reactjs/redux)
 combined with
-redux-infinite-scroll(https://github.com/RealScout/redux-infinite-scroll),
+[redux-infinite-scroll](https://github.com/RealScout/redux-infinite-scroll),
 deployed as a GitHub pages app. You can play with it
 [here](https://jstafford.github.io/github-explorer/).
 
@@ -18,10 +18,13 @@ The "real-world" example is described as follows in the React docs:
 > displaying error messages, and routing. Additionally, it includes Redux
 > DevTools.
 
-The example is updated to the latest versions, minimally modified to pass the desired
-api version, and extended with the
-[Redux infinite scroll](https://github.com/RealScout/redux-infinite-scroll)
-module by RealScout.
+The example was modified in the following ways:
+ * Used yarn instead of npm for everything
+ * Updated all dependencies to the latest versions
+ * Modified the middleware to pass the latest GitHub api version
+ * Switched from a paging list to a new infinitely scrolling list component based on
+ [redux-infinite-scroll](https://github.com/RealScout/redux-infinite-scroll)
+ by RealScout.
 
 For a guide on how to perform find some common tasks specific to apps built
 with Create React App, see the [react-scripts README](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
