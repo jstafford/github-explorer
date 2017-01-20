@@ -22,9 +22,16 @@ The example was modified in the following ways:
  * Used yarn instead of npm for everything
  * Updated all dependencies to the latest versions
  * Modified the middleware to pass the latest GitHub api version
- * Switched from a paging list to a new infinitely scrolling list component based on
+ * Switched from a paging list to a new infinitely scrolling list component
+ based on
  [redux-infinite-scroll](https://github.com/RealScout/redux-infinite-scroll)
  by RealScout.
+ * Support for react-router gained by following the instructions in the
+ react-scripts README at [Notes on client-side
+ routing](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#notes-on-client-side-routing)
+ and copying in code from
+ [spa-github-pages](https://github.com/rafrex/spa-github-pages)
 
 For a guide on how to perform find some common tasks specific to apps built
-with Create React App, see the [react-scripts README](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+with Create React App, see the [react-scripts
+README](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
