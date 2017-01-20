@@ -1,6 +1,6 @@
 {
-  "name": "real-world-infinite",
-  "description": "",
+  "name": "github-explorer",
+  "description": "The react-redux examples/real-world combined with redux-infinite-scroll, deployed as a GitHub Pages app.",
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
@@ -25,6 +25,7 @@
     "redux-infinite-scroll": "^1.0.9",
     "redux-thunk": "^2.1.0"
   },
+  "homepage": "https://jstafford.github.io/github-explorer",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
