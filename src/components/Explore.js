@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 
-const GITHUB_REPO = 'https://github.com/reactjs/redux'
+const GITHUB_REPO = 'https://github.com/jstafford/github-explorer'
 
 export default class Explore extends Component {
   static propTypes = {
@@ -35,6 +35,18 @@ export default class Explore extends Component {
     this.props.onChange(this.getInputValue())
   }
 
+  renderDevMessageIfNotProduction() {
+    if (process.env.NODE_ENV === 'production') {
+      return
+    } else {
+      return (
+        <p>
+          Move the DevTools with Ctrl+W or hide them with Ctrl+H.
+        </p>
+      )
+    }
+  }
+
   render() {
     return (
       <div>
@@ -49,9 +61,7 @@ export default class Explore extends Component {
         <p>
           Code on <a href={GITHUB_REPO} target="_blank">Github</a>.
         </p>
-        <p>
-          Move the DevTools with Ctrl+W or hide them with Ctrl+H.
-        </p>
+        {this.renderDevMessageIfNotProduction()}
       </div>
     )
   }

@@ -1,24 +1,37 @@
-Real World React Redux With Infinite Scroll
-===========================================
+GitHub Explorer
+===============
+
+This is examples/real-world from [react-redux](https://github.com/reactjs/redux)
+combined with
+[redux-infinite-scroll](https://github.com/RealScout/redux-infinite-scroll),
+deployed as a GitHub pages app. You can play with it
+[here](https://jstafford.github.io/github-explorer/).
 
 This project was bootstrapped with
 [Create React App](https://github.com/facebookincubator/create-react-app).
 
-It is based on the "real world" example from Redux, found in the
-examples/real-world directory of [Redux](https://github.com/reactjs/redux)
+The "real-world" example is described as follows in the React docs:
 
-It is described as follows:
+> This is the most advanced example. It is dense by design. It covers keeping
+> fetched entities in a normalized cache, implementing a custom middleware for
+> API calls, rendering partially loaded data, pagination, caching responses,
+> displaying error messages, and routing. Additionally, it includes Redux
+> DevTools.
 
-This is the most advanced example. It is dense by design. It covers keeping
-fetched entities in a normalized cache, implementing a custom middleware for
-API calls, rendering partially loaded data, pagination, caching responses,
-displaying error messages, and routing. Additionally, it includes Redux
-DevTools.
-
-It is updated to the latest versions, slightly modified to keep a fixed header
-(rather than scroll the entire window), and extended with the
-[Redux infinite scroll](https://github.com/RealScout/redux-infinite-scroll)
-module by RealScout.
+The example was modified in the following ways:
+ * Used yarn instead of npm for everything
+ * Updated all dependencies to the latest versions
+ * Modified the middleware to pass the latest GitHub api version
+ * Switched from a paging list to a new infinitely scrolling list component
+ based on
+ [redux-infinite-scroll](https://github.com/RealScout/redux-infinite-scroll)
+ by RealScout.
+ * Support for react-router gained by following the instructions in the
+ react-scripts README at [Notes on client-side
+ routing](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#notes-on-client-side-routing)
+ and copying in code from
+ [spa-github-pages](https://github.com/rafrex/spa-github-pages)
 
 For a guide on how to perform find some common tasks specific to apps built
-with Create React App, see the [react-scripts README](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+with Create React App, see the [react-scripts
+README](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
